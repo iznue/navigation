@@ -36,7 +36,8 @@ int main(int argc, char** argv){
   tf2_ros::TransformListener tf(buffer);
 
   move_base::MoveBase move_base( buffer );
-
+  // move base node에서는 TF buffer를 MoveBase에 넘겨주는 역할만 함
+	
   //ros::MultiThreadedSpinner s;
   ros::spin();
 
